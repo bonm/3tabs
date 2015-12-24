@@ -1,0 +1,32 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "3 Tabs only",
+  "version": "0.1",
+
+  // Recommended
+  "description": "Open only 3 tabs, for best work",
+  "permissions": [
+        "tabs", "alarms","notifications" 
+        ],
+  "icons": {
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  },
+  "background": {
+    "scripts": ["bgscript.js"],
+    "persistent": false
+  },
+	
+  "browser_action": {
+      "default_title": "Make only 3 tabs",
+
+      "default_icon": {
+        "19": "img/icon-19.png",
+        "38": "img/icon-38.png"
+      },
+    
+      "default_popup": "popup.html"
+  }
+	
+}
